@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>YEW Cafe Menu</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0;font-family:Arial,sans-serif}
+body{background:#f8f3ec;color:#222}
+.hero{height:70vh;background:#111;display:flex;align-items:center;justify-content:center;text-align:center;color:white}
+.hero img{width:160px;border-radius:20px;animation:zoom 1.5s}
+.hero h1{font-size:55px;letter-spacing:8px}
+@keyframes zoom{from{transform:scale(.5);opacity:0}to{transform:scale(1);opacity:1}}
+section{padding:50px 8%}
+.title{text-align:center;font-size:38px;margin-bottom:35px}
+.menu{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:25px}
+.card{background:white;border-radius:20px;overflow:hidden;box-shadow:0 10px 25px #0002;transition:.4s}
+.card:hover{transform:translateY(-10px)}
+.card img{width:100%;height:220px;object-fit:cover}
+.info{padding:20px}
+.price{color:#9b642e;font-weight:bold;font-size:20px}
+.location{background:#111;color:white;text-align:center}
+iframe{width:100%;height:300px;border:0;border-radius:15px;margin-top:20px}
+.whatsapp{position:fixed;right:20px;bottom:20px;background:#25d366;color:white;padding:15px 22px;border-radius:40px;text-decoration:none}
+</style>
+</head>
+<body>
+
+<div class="hero">
+<div>
+<img src="images/logo.jpg">
+<h1>YEW</h1>
+<p>Premium Coffee Experience</p>
+</div>
+</div>
+
+<section>
+<h2 class="title">Menu</h2>
+<div class="menu">
+<div class="card"><img src="images/product1.jpg"><div class="info"><h3>Special Coffee</h3><p class="price">120 EGP</p></div></div>
+<div class="card"><img src="images/product2.jpg"><div class="info"><h3>Signature Drink</h3><p class="price">130 EGP</p></div></div>
+<div class="card"><img src="images/product3.jpg"><div class="info"><h3>Fresh Dessert</h3><p class="price">140 EGP</p></div></div>
+<div class="card"><img src="images/product4.jpg"><div class="info"><h3>Special Item</h3><p class="price">150 EGP</p></div></div>
+<div class="card"><img src="images/product5.jpg"><div class="info"><h3>Yew Favorite</h3><p class="price">160 EGP</p></div></div>
+</div>
+</section>
+
+<section class="location">
+<h2>📍 Location</h2>
+<p>The Strip, Cairo, Egypt</p>
+<iframe src="https://www.google.com/maps?q=The%20Strip%20Cairo&output=embed"></iframe>
+</section>
+
+<a class="whatsapp" href="https://wa.me/201000000000">WhatsApp</a>
+
+</body>
+</html>
